@@ -1,49 +1,23 @@
-body {
-    font-family: Arial;
-    background: linear-gradient(to right, #ff758c, #ff7eb3);
-    text-align: center;
-    margin: 0;
-    overflow: hidden;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-.container {
-    margin-top: 150px;
-    position: relative;
-    z-index: 1;
-}
+<div class="container">
+    <h1>Do you love me? ❤️</h1>
 
-button {
-    padding: 12px 20px;
-    font-size: 18px;
-    margin: 10px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
+    <button class="yes" onclick="sayYes()">Yes</button>
+    <button class="no" id="noBtn" onmouseover="moveNo()">No</button>
 
-.yes {
-    background-color: green;
-    color: white;
-}
+    <h2 id="result"></h2>
+</div>
 
-.no {
-    background-color: red;
-    color: white;
-    position: absolute;
-}
+<script src="script.js"></script>
 
-/* القلوب */
-.heart {
-    position: fixed;
-    bottom: -20px;
-    color: pink;
-    font-size: 20px;
-    animation: floatUp linear forwards;
-}
-
-@keyframes floatUp {
-    to {
-        transform: translateY(-100vh);
-        opacity: 0;
-    }
-}
+</body>
+</html>
