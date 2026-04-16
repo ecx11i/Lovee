@@ -1,23 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Love ❤️</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
 
-<div class="container">
-    <h1>Do you love me? ❤️</h1>
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* مو بالمنتصف */
 
-    <button class="yes" onclick="sayYes()">Yes</button>
-    <button class="no" id="noBtn" onmouseover="moveNo()">No</button>
+    font-family: Arial;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    text-align: center;
+    overflow: hidden;
+}
 
-    <h2 id="result"></h2>
-</div>
+/* الصندوق */
+.container {
+    margin-top: 120px; /* هنا السر 🔥 */
+    text-align: center;
+    z-index: 1;
+}
 
-<script src="script.js"></script>
+/* النص */
+h1 {
+    font-size: 50px;
+}
 
-</body>
-</html>
+h2 {
+    font-size: 35px;
+}
+
+/* الأزرار */
+button {
+    padding: 12px 25px;
+    font-size: 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.yes {
+    background-color: green;
+    color: white;
+}
+
+.no {
+    background-color: red;
+    color: white;
+    position: absolute;
+}
+
+/* القلوب */
+.heart {
+    position: fixed;
+    bottom: -20px;
+    color: pink;
+    font-size: 20px;
+    animation: floatUp linear forwards;
+}
+
+@keyframes floatUp {
+    to {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+/* موبايل */
+@media (max-width: 600px) {
+    .container {
+        margin-top: 80px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
