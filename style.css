@@ -1,0 +1,49 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    margin-top: 150px;
+    position: relative;
+    z-index: 1;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 18px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.yes {
+    background-color: green;
+    color: white;
+}
+
+.no {
+    background-color: red;
+    color: white;
+    position: absolute;
+}
+
+/* القلوب */
+.heart {
+    position: fixed;
+    bottom: -20px;
+    color: pink;
+    font-size: 20px;
+    animation: floatUp linear forwards;
+}
+
+@keyframes floatUp {
+    to {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
